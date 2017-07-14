@@ -1,0 +1,29 @@
+<!--<input type="text" [(ngModel)]="hoge">　 hogeというバッファ領域作成 -->
+<!--<span>{{hoge}}</span>-->
+
+
+<!--<input type="text" [(ngModel)]="hoge"> []だけだと片方向。[()]だと双方向 -->
+<!--<input [value]="hoge">-->
+
+<!--<input type="text" [(ngModel)]="hoge">-->
+<!--<span *ngIf="hoge==='1'">1が入力されました<span> 入力チェックに使える -->
+
+<!--<input type="text" [(ngModel)]="hoge" required>-->
+<!--<span *ngIf="hoge==='1'">1が入力されました<span>-->
+
+
+<!--<form #f="ngForm" novalidate>
+  <input type="text" name="hoge" ngModel required>
+  <p [hidden]="!f.form.dirty || f.form.valid">必須入力です</p>
+</form>
+<ul>
+  <li *ngFor="let data of demoData">{{data.name}} - {{data.age}}</li>
+</ul>-->
+
+
+<h1>Issue Tracker</h1>
+<ul>
+  <li><a routerLink="home">Home</a></li>
+  <li><a routerLink="pages">Pages</a></li>
+</ul>
+<router-outlet></router-outlet>
